@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameOne"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_one"
+            app:layout_constraintEnd_toStartOf="@id/frameTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/frameThree"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25sp"
+                android:paddingTop="20dp"
+                android:text="@string/buttonOne_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/map_atercolor" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameTwo"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:background="@drawable/button_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frameOne"
+            app:layout_constraintBottom_toTopOf="@+id/frameFour"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25sp"
+                android:paddingTop="20dp"
+                android:text="@string/buttonTwo_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/flagmap_of_russia" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameThree"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_three"
+            app:layout_constraintEnd_toStartOf="@id/frameFour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frameOne"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25sp"
+                android:paddingTop="20dp"
+                android:text="@string/buttonThree_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/flagmap_of_russia" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameFour"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_four"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/frameThree"
+            app:layout_constraintTop_toBottomOf="@id/frameTwo" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25sp"
+                android:paddingTop="20dp"
+                android:text="@string/buttonFour_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="27dp"
+                android:src="@drawable/america" />
+
+        </FrameLayout>
+
+    <ImageView
+        android:id="@+id/doctor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/doctor"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameThree"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/beHealthy"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintStart_toEndOf="@id/doctor"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name_doctor"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorTitle"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

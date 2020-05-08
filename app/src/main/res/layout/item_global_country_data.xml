@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/item_global_background">
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorTitleStat"
+        android:textStyle="bold"
+        tools:text="Country"/>
+
+    <TextView
+        android:id="@+id/countryNewConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="New Confirmed: 0"/>
+
+    <TextView
+        android:id="@+id/countryNewDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="New Deaths: 0"/>
+
+    <TextView
+        android:id="@+id/countryNewRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="New Recovered: 0"/>
+
+    <TextView
+        android:id="@+id/countryTotalConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="Total Confirmed: 0"/>
+
+    <TextView
+        android:id="@+id/countryTotalDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="Total Deaths: 0"/>
+
+    <TextView
+        android:id="@+id/countryTotalRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:paddingStart="5dp"
+        tools:text="Total Recovered: 0"/>
+
+</LinearLayout>
